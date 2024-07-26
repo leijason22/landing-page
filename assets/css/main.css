@@ -37,6 +37,13 @@ ol, ul {
 	list-style: none;
 }
 
+.profile-image {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -85,7 +92,7 @@ input, select, textarea {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/betterpixelsky.png");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2351,11 +2358,11 @@ input, select, textarea {
 			}
 
 			ul.icons-grid li:nth-child(2n + 1) {
-				box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
+				box-shadow: inset -1px 0 0 0 #fff, 1px 0 0 0 #fff;
 			}
 
 			ul.icons-grid li:nth-child(2n + 3):before {
-				background: #dddddd;
+				background: #fff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -2368,6 +2375,74 @@ input, select, textarea {
 			clear: both;
 			content: '';
 			display: block;
+		}
+
+/* Projects Section */
+		.project-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+            width: 80%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project-description {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+/* Skills Grid */
+		.skills-grid {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			gap: 20px;
+		}
+	
+		.skill-category {
+			flex: 1;
+			min-width: 200px;
+			padding: 20px;
+			border-radius: 10px;
+			background: #fff;
+			text-align: left;
+		}
+	
+		.skill-category h3 {
+			margin-bottom: 10px;
+			color: #61686b;
+		}
+	
+		.skill-category ul {
+			list-style-type: none; /* Hides the bullet points */
+			padding: 0;
+		}
+	
+		.skill-category li {
+			margin: 10px 0;
+			font-size: 1.2em;
+			color: #61686b;
+		}
+	
+		.skill-category li i {
+			margin-right: 10px;
 		}
 
 /* Actions */
